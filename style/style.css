@@ -1,0 +1,501 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
+    font-family: "Roboto", sans-serif;
+}
+.clear_fix{
+    clear: both;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.home {
+    background-image: url(../imags/header.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: auto;    
+}
+.home .navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    position: fixed;
+    z-index: 9999;
+}
+.home .navbar .logo a{
+    float: left;
+    text-decoration: none;
+    color: #ff305b;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 15px 0;
+}
+.home .navbar .links{
+    float: right;
+    padding-top: 10px;
+}
+.home .navbar .links li{
+    float: left;
+    padding: 15px;
+    list-style: none;
+}
+.home .navbar .links .special a{
+    color: #ff305b ;
+}
+.home .navbar .links li a{
+       color: white;
+       text-decoration: none;
+}
+.home .navbar .links li a:hover{
+    color: #ff305b;
+}
+.home .layer{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100% ;
+}
+.home .home_caption{
+    text-align: center;
+    padding-top:250px ;
+}
+.home_caption p{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 24px;
+}
+.home_caption h1{
+    margin-bottom: 10px;
+    color: #ff305b;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+
+.about .content{
+    float: right;
+    width: 50%;
+    margin-top: 100px;
+}
+.about .content h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.content h2::after{
+    content: "";
+    position: absolute; 
+    height: 90%;
+    width: 5px;
+    background-color: #ff305b;
+    left: -20px;
+    top: 0;
+}
+.about .content p{
+    line-height: 25px;
+    color: rgb(85, 85, 85);
+    border-bottom: 1px dashed  rgb(85, 85, 85);
+    padding-bottom: 20px;
+}
+.about .photo{
+    float: left;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border: 10px solid #555555;
+    border-radius: 5px;
+}
+.photo img{
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    top: 20px ;
+    left: 20px;
+}
+/* .photos .layer2{
+    opacity: 0;
+}
+.photos .layer2:hover{
+    opacity: 1;
+} */
+.about .info_list ul{
+margin-top: 20px;
+padding-left: 0px;
+}
+.about .info_list li {
+    float:left;
+    width: 40%;
+    list-style: none;
+    padding: 10px 0px;
+    color: rgb(85, 85, 85);
+}
+.about .info_list li span{
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.about .info_list .buttom a{
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: white ;
+    background-color: #ff305b;
+}
+.about .info_list .buttom{
+    margin-top: 20px;
+}
+.about .info_list .buttom a:hover{
+    background-color: #EC2403;
+}
+.about .btn1 {
+    margin-right: 15px ; 
+    text-decoration: none; 
+}
+.buttom a i{
+    font-size: inherit;
+    margin-left: 5px;
+    display: inline-block;
+}
+.about .btn2 {
+    text-decoration: none;
+}
+
+
+.services{
+    text-align:center ;
+    background-color: #f1f1f1;
+    padding: 50px 0;
+    margin-top: 100px;
+    height: 500px;
+}
+.services h2{
+    margin-bottom: 60px;
+    padding-top: 50px;
+    font-size: 40px;
+    position: relative;
+}
+.services h2::before{
+    content: "";
+    position: absolute;
+    border-color: #ff305b;
+    width: 70px;
+    height: 1px;
+    margin: 0 auto;
+    border-width: 1px 0;
+    border-style: solid;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+}
+.services h2::after{
+    content: "";
+    position: absolute;
+    background-color: #ff305b;
+    width: 160px;
+    height: 2px;
+    z-index: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+}
+.services h3{
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 50px;
+}
+.services .design .in{
+    padding: 30px;
+    position: relative;
+}
+.services .design{
+    float: left;
+    width: 25%;
+}
+.services .design i {
+    margin-bottom: 100px;
+    color: #ff305b;
+    position: absolute;
+    font-size: 20px;
+}
+.services .design p {
+    text-align: center;
+    padding-top: 10px;
+    line-height: 25px;
+    width: 100%;
+    color: #555555;
+}
+.design:hover .in{
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+.design:hover .in i{
+transform: scale(1.5);
+}
+
+
+
+.header {
+    text-align: center;
+    margin-top: 100px;
+}
+.header h2::before{
+    content: "";
+    position: absolute;
+    background-color: #ff305b;
+    width: 15%;
+    height: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+}
+.header h2::after{
+    content: "";
+    position: absolute;
+    background-color: #ff305b;
+    width: 8%;
+    height: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+}
+.header h2{
+    font-size: 40px;
+    padding-top:  30px;
+    position: relative;
+}
+.header ul{
+    list-style: none ;
+    padding: 30px 350px 0;
+}
+.header li a{
+    text-decoration: none;
+    float: left;
+    padding: 40px 20px 30px 40px;
+    color: #333333;
+}
+.header li a:hover{
+    color: #ff305b;
+}
+.header ul .private {
+    color: #ff305b;
+}
+.photos ul{
+    list-style: none;
+    padding-top: 30px;
+}
+.photos li {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+
+}
+.photos a img{
+    width: 90%;
+}
+
+
+
+.numbers{
+    height: 300px;
+    margin-top: 100px;
+    background-color:#f1f1f1;
+}
+.item{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 100px;
+}
+.item i{
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: #ff305b;
+}
+.item h2{
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+.item p{
+    color: #555555;
+}
+
+
+.feedback{
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+}
+.feedback .head h2{
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+.feedback .head h2::before{
+    content: "";
+    position: absolute;
+    background-color: #ff305b;
+    width: 15%;
+    height: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+}
+.feedback .head h2::after{
+    content: "";
+    position: absolute;
+    background-color: #ff305b;
+    width: 8%;
+    height: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+}
+.feedback .card{
+    background-color: rgb(241, 241, 241);
+    margin-top: 80px;
+}
+.feedback .caption{
+    float: right;
+    width: 70%;
+}
+.feedback .caption h3{
+    font-size: 26px;
+    padding: 20px 20px 10px;
+}
+.feedback .caption p{
+    padding: 15px 15px 80px ;
+    width: 90%;
+    line-height: 30px;
+    color: #555555;
+    font-style: italic;
+}
+.feedback .caption a{
+    padding: 20px;
+    color:#555555;
+}
+.feedback .caption a:hover{
+    text-decoration: none;
+}
+.feedback .caption a i{
+    padding-right: 5px;
+}
+.feedback .profile_photo{
+    float: left;
+    width: 10%;
+}
+.feedback .profile_photo img{
+    border-radius: 50%;
+}
+.feedback .profile_photo .triangle{
+    border-left: 100px solid #ff305b; 
+    border-top: 100px solid #ff305b;
+    border-right: 100px solid transparent; 
+    border-bottom: 100px solid transparent; 
+}
+
+
+/* .blog{
+    background-color: rgb(241, 241, 241);
+    margin-top: 200px;
+}
+.blog h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+}
+.blog h2::after{
+    content: "";
+    position: absolute;
+    background-color: #ff305b;
+    width: 8%;
+    height: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+}
+.blog h2::before{
+    content: "";
+    position: absolute;
+    background-color: #ff305b;
+    width: 15%;
+    height: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+}
+.blog .parent{
+    padding: 0 50px;
+}
+.blog .first{
+    float: left;
+    width: 33.3333%;
+    background-color: aqua;
+}
+.blog img{
+    width: 100%;
+}
+.blog .second{
+    float: right;
+    width: 33.3333%;
+    background-color: chartreuse;
+}
+.blog img{
+    width: 100%;
+}
+.blog .third{
+    float: right;
+    width: 33.3333%;
+    background-color: blue;
+}
+.third img{
+    width: 100%;
+} */
+
+
+
+
+
+
+
+.social{
+    background-color: #333333;
+    height: 200px;
+    padding-top: 70px ;
+    text-align: center;
+}
+.social a{
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.social a:hover{
+    color: #ff305b;
+}
+.footer p{
+    color: white;
+    padding-top: 20px;
+}
+.social .inner{
+    color: #ff305b;
+}
+
+
+
+
+
+
+
+
